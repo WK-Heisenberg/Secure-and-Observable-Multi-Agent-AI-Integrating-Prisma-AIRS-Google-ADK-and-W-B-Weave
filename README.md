@@ -17,8 +17,6 @@ This project demonstrates a secure, multi-agent application built with the **Goo
 
 ## Architecture
 
-![Architecture Diagram](https://via.placeholder.com/800x400.png?text=Architecture+Diagram)
-
 The system is composed of several key components that work together to process user requests securely:
 
 1.  **`OrchestratorAgent`**: The primary entry point for all user requests. It analyzes the user's prompt and decides whether to handle it directly or delegate it to a more specialized agent.
@@ -279,15 +277,11 @@ This application can be deployed as a Docker container to Google Cloud Run.
 
 This application is instrumented with **OpenTelemetry** for distributed tracing and **Weights & Biases** for observability. All agent interactions, including LLM calls and tool usage, are captured as spans and sent to your W&B project for analysis.
 
-![W&B Dashboard](https://via.placeholder.com/800x400.png?text=W%26B+Dashboard)
-
 Additionally, we use **W&B Weave** to log the prompts and responses for each agent, providing a detailed view of the entire conversation flow. This allows you to debug your agents, analyze their behavior, and ensure they are working as expected.
 
 ## Security
 
 This application is protected by **Palo Alto Networks Prisma AIRS**. All prompts and responses are scanned for security threats in real-time.
-
-![Security Dashboard](https://via.placeholder.com/800x400.png?text=Security+Dashboard)
 
 ## Contributing
 
