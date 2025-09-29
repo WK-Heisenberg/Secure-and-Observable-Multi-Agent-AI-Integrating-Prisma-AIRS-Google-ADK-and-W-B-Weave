@@ -1,0 +1,44 @@
+#
+# Copyright 2023-2024 NXP
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+
+# Header key
+
+import aisecurity._version
+
+HEADER_API_KEY = "x-pan-token"
+PAYLOAD_HASH = "x-payload-hash"
+USER_AGENT = f"PAN-AIRS/{aisecurity._version.__version__}-python-sdk"
+
+DEFAULT_ENDPOINT = "https://service.api.aisecurity.paloaltonetworks.com"
+
+# Environment variables
+AI_SEC_API_KEY = "PANW_AI_SEC_API_KEY"
+AI_SEC_API_TOKEN = "PANW_AI_SEC_API_TOKEN"
+AI_SEC_API_ENDPOINT = "PANW_AI_SEC_API_ENDPOINT"
+HEADER_AUTH_TOKEN = "Authorization"
+BEARER = "Bearer "
+# Content length limits
+MAX_CONTENT_PROMPT_LENGTH = 2 * 1024 * 1024
+MAX_CONTENT_RESPONSE_LENGTH = 2 * 1024 * 1024
+MAX_CONTENT_CONTEXT_LENGTH = 100 * 1024 * 1024
+# Key ID length constraint
+MAX_API_KEY_LENGTH = 2048
+MAX_TOKEN_LENGTH = 2048
+
+
+# Request IDs constraints
+MAX_TRANSACTION_ID_STR_LENGTH = 100
+MAX_SCAN_ID_STR_LENGTH = 36
+MAX_NUMBER_OF_SCAN_IDS = 5
+MAX_REPORT_ID_STR_LENGTH = 40
+MAX_NUMBER_OF_REPORT_IDS = 5
+MAX_AI_PROFILE_NAME_LENGTH = 100
+MAX_NUMBER_OF_BATCH_SCAN_OBJECTS = 5
+
+# API Client
+MAX_CONNECTION_POOL_SIZE = 100
+MAX_NUMBER_OF_RETRIES = 5
+HTTP_FORCE_RETRY_STATUS_CODES = [500, 502, 503, 504]

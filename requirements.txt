@@ -1,0 +1,23 @@
+#ADK Core
+google-adk
+
+#Web Server
+uvicorn
+aiohttp
+
+#Environment variable loading
+python-dotenv
+
+#Google API Client for Search Tool
+google-api-python-client
+google-api-core
+
+#Optional: For metrics logging
+wandb
+
+#Weave
+weave
+
+#OpenTelemetry
+opentelemetry-sdk
+opentelemetry-exporter-otlp-proto-http
